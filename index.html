@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Break-Even Calculator</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>
+            Break-Even Calculator
+        </h1>
+
+        <form id="calculator">
+            <label for="selling-price">Selling Price per Unit ($)</label>
+            <input id="selling-price" type="number" min="0" step="0.01" required>
+
+            <label for="variable-cost">Variable Cost per Unit ($)</label>
+            <input id="variable-cost" type="number" min="0" step="0.01" required>
+
+            <label for="fixed-costs">Total Fixed Costs ($)</label>
+            <input id="fixed-costs" type="number" min="0" step="0.01" required>
+
+            <button>Calculate</button>
+
+        </form>
+
+        <p id="result"></p>
+    </body>
+</html>
